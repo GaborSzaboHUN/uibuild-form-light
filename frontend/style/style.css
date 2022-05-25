@@ -1,111 +1,121 @@
-/* 
-font-family: 'EB Garamond', serif;
-font-family: 'Montserrat', sans-serif;
-*/
-
 body {
-    background-color: #f7e4d4;
+  background-color: #f7e4d4;
 }
 
 .form-group {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    max-width: 480px;
-    width: calc(100% - 40px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 480px;
+  width: calc(100% - 40px);
 }
 
-.form-group>h1 {
-    margin-bottom: 20px;
-
-    font-family: 'EB Garamond', serif;
-    font-size: 48px;
-    font-weight: 400;
-    color: #467745;
-
-    text-align: center;
+.form-group h1 {
+  margin-bottom: 20px;
+  font-family: 'EB Garamond', serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #467745;
+  text-align: center;
 }
 
-
-
-.form-group>input {
-    width: 100%;
-    height: 64px;
-    background-color: white;
-
-    margin-bottom: 20px;
-    padding: 0 20px;
-
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: #467745;
+@media screen and (max-width: 520px) {
+  .form-group h1 {
+    text-align: left;
+    font-size: 36px;
+  }
 }
 
-::placeholder {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: #467745;
+.form-group input {
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #467745;
 }
 
-.form-group>textarea {
-    width: 100%;
-    height: 120px;
-    background-color: white;
-
-    margin-bottom: 20px;
-    padding: 20px;
-
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: #467745
+.form-group ::-webkit-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #467745;
 }
 
-.checkbox-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+.form-group :-ms-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #467745;
 }
 
-.form-group>.checkbox-group>input {
-    height: 50px;
+.form-group ::-ms-input-placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #467745;
 }
 
-.privacy-policy {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: #467745
+.form-group ::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #467745;
 }
 
-.privacy-policy>a {
-    text-decoration: underline;
+.form-group textarea {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #467745;
 }
 
-
-.form-group>button {
-    max-width: 280px;
-    width: calc(100% - 40px);
-
-    height: 80px;
-    background-color: #467745;
-    border-radius: 40px;
-
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-
-
-    font-family: 'EB Garamond', serif;
-    font-size: 21px;
-    letter-spacing: .2em;
-    font-weight: 500;
-    color: #f7e4d4;
+.form-group .checkbox-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
 }
 
-@media screen and (max-width:520px) {
-    .form-group>h1 {
-        text-align: left;
-        font-size: 36px;
-    }
+.form-group .checkbox-group #checkbox {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0;
+  border: 1px solid white;
 }
+
+.form-group .checkbox-group .privacy-policy {
+  margin-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #467745;
+}
+
+.form-group .checkbox-group .privacy-policy a {
+  text-decoration: underline;
+}
+
+.form-group button {
+  max-width: 280px;
+  width: calc(100% - 40px);
+  height: 80px;
+  background-color: #467745;
+  border-radius: 40px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: 'EB Garamond', serif;
+  font-size: 21px;
+  letter-spacing: .2em;
+  font-weight: 500;
+  color: #f7e4d4;
+}
+/*# sourceMappingURL=style.css.map */
